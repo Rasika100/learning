@@ -1,178 +1,137 @@
 *{
-    margin-top: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-family: 'josefin sans',sans-serif;
     box-sizing: border-box;
 }
-body{
-    background-color: #000;
-    color: #fff;
-
-}
-.header{
-    width: 100%;
+.hero{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    width: 100%;
+    background-image: url(images/4311978.png);
     background-size: cover;
     background-position: center;
-    padding: 10px 8%;
-    position: relative;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding-top: 45px;
+    padding-left: 8%;
 }
-
 .logo{
-    width: 150px;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
     cursor: pointer;
 }
-nav button{
-    border: 0;
-    outline: 0;
-    background: #db0001;
-    color: #fff;
-    padding: 7px 20px;
-    font-size: 12px;
-    border-radius: 4px;
-    margin-left: 10px;
-    cursor: pointer;
+span{
+    color: #f9004d;
 }
-.header-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    margin-top: 100px;
-}
-.email-signup{
-    background: #fff;
-    border-radius: 4px;
-    display: flex;
-    align-items: centre;
-    margin-top: 30px;
-    overflow: hidden;
-}
-.email-signup input{
-    flex: 1;
-    border: 0;
-    outline: 0;
-    margin-left: 20px;
-}
-.email-signup button{
-    background: #db0001;
-    border: 0;
-    outline: 0;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
     padding: 10px 25px;
 }
-.features{
-    padding: 50px 12%;
-    font-size: 22px;
+nav ul li a{
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
 }
-.row{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 0;
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
 }
-.text-col{
-    flex-basis: 50%;
-    margin-bottom: 20px;
-}
-.img-col{
-    flex-basis: 50%;
-    margin-bottom: 20px;
-
-}
-.img-col img{
-    display: block;
-    width: 90%;
-    margin: auto;
-}
-.faq{
-    padding: 10px 12%;
-    text-align: center;
-    font-size: 18px;
-}
-.accordian{
-    margin: 60px auto;
-    width: 100%;
-    max-width: 750px;
-}
-.accordian li{
-    list-style: none;
-    width: 100%;
-    padding: 5px;
-}
-.accordian li label{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    background: #303030;
-    margin-bottom: 2px;
-    cursor: pointer;
-    position: relative;
-}
-label::after{
-    content: '+';
-    font-size: 34px;
+.content{
     position: absolute;
-    right: 20px;
-    transition: transform 0.5s;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
 }
-input[type="radio"]{
-    display: none;
+h1{
+    color: red;
+    margin: 20px 0px 20px;
 }
-.accordian .content{
-    background: #303030;
-    text-align: left;
-    padding: 0 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid#f9004d;
+    outline: none;
+    border-radius: 30px;
+}.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+}.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
 }
-.accordian input[type="radio"]:checked + label + .content{
-    max-height: 600px;
-    padding: 30px 20px;
+.about img{
+    height: auto;
+    width: 430px;
 }
-.accordian input[type="radio"]:checked + label::after{
-    transform: rotate(135deg);
+.about-text{
+    width: 550px;
 }
-.faq .email-signup{
-    max-width: 600px;
-    margin:20px auto 60px;
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-.faq small{
-    font-size: 20px;
-}
-.footer{
-    padding: 50px 15% 10px;
-    border-top: 6px,solid #333;
-    color: #777;
-}
-.footer{
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-.footer .col{
-    flex-basis: 25%;
-    flex-grow: 1;
+.about-text h2{
+    color: grey;
+    font-size: 75px;
+    text-transform: capitalize ;
     margin-bottom: 20px;
 }
-.footer .col a{
+.box img{
+    height: auto;
+    width: 230px;
+}
+.skills{
+    background: #101010;
+    width: grey;
+    padding: 100px 0px;
+}
+.Title h2{
+    color: black;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 205px;
+    width: 205px;
+    padding: 20px 35px;
+    background:grey;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
     display: block;
-    text-decoration: block;
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 10px;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
 }
